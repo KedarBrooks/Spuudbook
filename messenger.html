@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="scripts/msg.js"></script>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -19,6 +21,8 @@ body {
 .dmPanel {
 	float:right; 
   height: 500px;
+  overflow: scroll;
+  overflow: auto;
 	/* Temperary Stuff */ 
 }
 
@@ -97,65 +101,17 @@ textarea {
 <h2>Chat Messages</h2>
 
 <div id="dms" class="dmPanel">
-<div class="container">
-  <img src="assets/default-user.png" alt="Avatar" style="width:100%;">
-  <p>Hello. How are you today?</p>
-  <span class="time-right">11:00</span>
-</div>
-
-<div class="container darker">
-  <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
-  <p>Hey! I'm fine. Thanks for asking!</p>
-  <span class="time-left">11:01</span>
-</div>
-
-<div class="container">
-  <img src="assets/default-user.png" alt="Avatar" style="width:100%;">
-  <p>Sweet! So, what do you wanna do today?</p>
-  <span class="time-right">11:02</span>
-</div>
-
-<div class="container darker">
-  <img src="/w3images/avatar_g2.jpg" alt="Avatar" style="width:100%;">
-  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-  <span class="time-left">11:05</span>
-</div>
+    <div class="container darker">
+        <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
+        <p>Hello! welcome to myPotato. If you have a question about the site, just ask!</p>
+        <span class="time-left">11:01</span>
+      </div>
 </div>
 
 <div class="messageBar">
   <textarea id="txt-a" rows="4" cols="50"></textarea>
-  <button class="send-button" onclick="sendMessage()">send</button>
+  <button class="send-button" onclick="msgInstance()">send</button>
 </div>
 
 </body>
-
-<script>
-  function getMsg() {
-    return document.getElementById("txt-a").value; 
-  }
-  function sendMessage() {
-    var block = document.createElement('div');
-    block.className="container";
-    /* Profile */
-    var img = document.createElement('IMG');
-    img.className = "profileImg"; 
-    img.src = "assets/default-user.png";
-    img.alt = "Avatar"; 
-    block.appendChild(img);
-    /* Message */
-    var t = document.createElement('P');
-    t.textContent = getMsg(); 
-    block.appendChild(t);
-    /* Timestamp */
-    //var timeStamp = document.createElement('SPAN');
-    var timeStamp = document.createElement('P');
-    timeStamp.textContent = "11:05";  
-    timeStamp.className = "time-right";
-    block.appendChild(timeStamp);
-    /* Push to dms */
-    var chatContainer = document.getElementById('dms');
-    chatContainer.appendChild(block);   
-  }
- 
-</script>
 </html>
