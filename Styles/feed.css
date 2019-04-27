@@ -1,0 +1,48 @@
+.head
+{
+   background-image: repeating-linear-gradient(to right, red, orange, yellow);
+    background-image: url(../images/potatoback.jpg);
+    color: white;
+}
+
+body
+{
+    background-image:url(../images/idaho.jpg)
+}
+
+.Feed1
+
+{
+    background-image: linear-gradient(to left, brown, orange, red, yellow);
+    opacity: .9;
+    color: black;  
+}
+
+.Feed2
+{
+    background-image: repeating-linear-gradient(to right, yellow, orange, red, brown);
+    color: black;   
+    opacity: .9;
+}
+
+.Feed3
+{
+     background-image: repeating-linear-gradient(to right, orange, brown, yellow, red);
+    color: black;   
+    opacity: .9;
+}
+
+.Feed4
+{
+     background-image: repeating-linear-gradient(to right, red, brown, yellow, orange);
+     color: black;   
+     opacity: .9;
+}
+
+
+.foot
+{
+    background-color: blue;
+    color: white;
+    opacity: .8;
+}
