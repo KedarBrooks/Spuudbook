@@ -109,33 +109,42 @@ textarea {
 }
 </style>
 </head>
+
+<body>
 <nav>
     <div class="navBarTop">
-            <a class="active" href="feed.html">Home/Feed</a>
-            <a href="ProfileP.html">Profile</a>
-            <a href="AboutUs.html">About Us</a>
+            <a class="navbar-brand" href="feed.html">
+            <img src="assets/profilePictures/dance_2.gif" width="30" height="30" class="d-inline-block align-top" alt=""> SpudBook</a>
             <a href="messenger.html">Chatroom</a>
+            <a href="history.html">Potato History</a>
+            <a href="faq.html">FAQ</a>
+            <div class="nav justify-content-end">
+            <a class="navbar-brand " href="ProfileP.html" >
+            <img src="assets/user.png" width="30" height="30" class="d-inline-block align-top "></a>
+            </div>
     </div>
 </nav> 
-<body>
-<h2>Chat Messages</h2>
+<div class="head" style="color: black">   
+ <center><header><h1>Spudbook Bot</h1></header></center>
+</div>
 
 <div id="dms" class="dmPanel">
     <div class="container darker">
-        <img src="/assets/default-user.png" alt="Avatar" class="right" style="width:100%;">
-        <p>Hello! welcome to myPotato. If you have a question about the site, just ask!</p>
+        <img src="/assets/profilePictures/couch.jpg" alt="Avatar" class="right" style="width:100%;">
+        <p>Hello! Welcome to SpudBook... My name is couch potato, how can I help you?</p>
         <span class="time-left">11:01</span>
       </div>
 </div>
 
-<div class="messageBar">
+<div class="messageBar" style="align-content: center">
   <textarea id="txt-a" rows="2" cols="80"></textarea>
-  <button class="send-button" onclick="msgInstance()">send</button>
+  <button class="send-button" onclick="msgInstance()">Send</button>
 </div>
-
+<foot>
 <div class="footer">
     <p>©2019 SpuuudBook LLC     
-    <a href="page links go here">About Us</a></p>
+    <a href="AboutUs.html">About Us</a></p>
 </div>
+</foot>
 </body>
 </html>

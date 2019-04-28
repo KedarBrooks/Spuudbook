@@ -49,7 +49,7 @@ function replyMessage(msg, resourceLink) {
     /* Profile */
     var img = document.createElement('IMG');
     img.className = "profileImg"; 
-    img.src = "assets/user.png";
+    img.src = "/assets/profilePictures/couch.jpg";
     img.alt = "Avatar"; 
     block.appendChild(img);
     /* Message */

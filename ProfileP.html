@@ -12,20 +12,25 @@
         <link rel="stylesheet" href="Styles/style.css">
 
     </head>
+    
+    <body>
     <nav>
         <div class="navBarTop">
-                <a class="active" href="feed.html">Home/Feed</a>
-                <a href="ProfileP.html">Profile</a>
-                <a href="AboutUs.html">About Us</a>
+                <a class="navbar-brand" href="feed.html">
+                <img src="assets/profilePictures/dance_2.gif" width="30" height="30" class="d-inline-block align-top" alt=""> SpudBook</a>
                 <a href="messenger.html">Chatroom</a>
+                <a href="history.html">Potato History</a>
+                <a href="faq.html">FAQ</a>
+                <div class="nav justify-content-end">
+                <a class="navbar-brand " href="ProfileP.html" >
+                <img src="assets/user.png" width="30" height="30" class="d-inline-block align-top "></a>
+                </div>
         </div>
     </nav> 
-    <center><header>Welcome to your Profile Page</header></center>
-    
-   
-	<br><br><br>
-   <div class="container"> 
-	
+    <div class="head" style="color: black">   
+ <center><header><h1>Spudbook Profile</h1></header></center>
+</div>
+    <div class="container">
     <form>
   <div class="form-row">
     <div class="form-group col-md-6">
@@ -78,15 +83,12 @@
   </div>
   <button type="submit" class="btn btn-primary">Save ya Info</button>
 </form>
-   </div>
     
-	<br><br><br>
     <div class="container">
-    <h1> What kinda Potato are ya?
-    </h1>
+    <h1> What kinda Potato are ya?</h1>
     <div class="avatar-upload">
         <div class="avatar-edit">
-            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg">
             <label for="imageUpload"></label>
         </div>
         <div class="avatar-preview">
@@ -95,18 +97,12 @@
         </div>
     </div>
 </div>
-    
-    
-    
-    
-    `
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
-    </div>
-    
+        </div>
+    <foot>
+<div class="footer">
+    <p>©2019 SpuuudBook LLC     
+    <a href="AboutUs.html">About Us</a></p>
+</div>
+</foot>
     </body>
 </html>
