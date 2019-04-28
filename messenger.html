@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+   <head>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="scripts/msg.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="Styles/style.css">
-<head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spudbook Chat Bot</title>
 <style>
 body {
   margin: 0 auto;
@@ -88,6 +90,7 @@ body {
   margin-bottom:70px; 
 }
 .send-button { 
+  background:repeating-linear-gradient(to right, red, orange, yellow);
   float:left;
   display: flex; 
 }
@@ -116,7 +119,7 @@ textarea {
             <a class="navbar-brand" href="feed.html">
             <img src="assets/profilePictures/dance_2.gif" width="30" height="30" class="d-inline-block align-top" alt=""> SpudBook</a>
             <a href="messenger.html">Chatroom</a>
-            <a href="history.html">Potato History</a>
+            <a href="gallery.html">Gallery</a>
             <a href="faq.html">FAQ</a>
             <div class="nav justify-content-end">
             <a class="navbar-brand " href="ProfileP.html" >
@@ -125,9 +128,12 @@ textarea {
     </div>
 </nav> 
 <div class="head" style="color: black">   
- <center><header><h1>Spudbook Bot</h1></header></center>
+ <center><header><h1>SpudBook Chat Bot</h1></header></center>
 </div>
 
+<h1 class="font-weight-light text-center text-lg mt-4 mb-0">Beautiful Conversation</h1>
+  <hr class="mt-2 mb-5">
+  
 <div id="dms" class="dmPanel">
     <div class="container darker">
         <img src="/assets/profilePictures/couch.jpg" alt="Avatar" class="right" style="width:100%;">
@@ -138,7 +144,7 @@ textarea {
 
 <div class="messageBar" style="align-content: center">
   <textarea id="txt-a" rows="2" cols="80"></textarea>
-  <button class="send-button" onclick="msgInstance()">Send</button>
+  <button class="send-button btn btn-primary" onclick="msgInstance()">Send</button>
 </div>
 <foot>
 <div class="footer">
