@@ -41,16 +41,23 @@ body {
 .container {
   float:right; 
   border: 2px solid #dedede;
-  background-color: #f1f1f1;
   border-radius: 5px;
   padding: 10px;
   margin: 10px 0;
+  color:white;
+  font: bolder;
+  font-size: 20; 
+  border-color:black; 
+  background:repeating-linear-gradient(to right, red, orange, yellow);
+
 }
 
 .darker {
-  border-color: #ccc;
-  background-color: #ddd;
+  border-color:black;
+  color:white;
   float: left; 
+  background:repeating-linear-gradient(to right, red, orange, yellow);
+
 }
 
 .container::after {
@@ -78,6 +85,7 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
+  margin-bottom:70px; 
 }
 .send-button { 
   float:left;
@@ -125,5 +133,9 @@ textarea {
   <button class="send-button" onclick="msgInstance()">send</button>
 </div>
 
+<div class="footer">
+    <p>©2019 SpuuudBook LLC     
+    <a href="page links go here">About Us</a></p>
+</div>
 </body>
 </html>
