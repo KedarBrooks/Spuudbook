@@ -1,32 +1,31 @@
 <html>
     <head>
         <title> SpudBook Login and Registraion</title>
-        <link rel="stylesheet" href="Styles/style.css">
+        <link rel="stylesheet" href="Styles\styleLogin.css">
 
     </head>
     <body>
-        <form method="post" action="login.php";></form>
         <div class="login-page">
         <div class="form">
             <h1>Welcome to SpudBook</h1>
                 <p> <img class="img1" src="assets/profilePictures/dance_2.gif"> </p>
-                <form class="register-form">
+                <form class="register-form" action="ProfileP.html">
                 <input type="text" placeholder="Username"/>
                 <input type="password" placeholder="Password"/>
                 <input type="text" placeholder="Email"/>
                 <div class="picture"><label>Select a profile image: </label><input type="file" name="picture" accept="image/*"/></div>
-                <button onclick="window.location.href = 'ProfileP.html'">Register</button>
-                <p class="message">Already a potato? <a class="test" href="#" style="color:rgb(7, 238, 255); ">Login</a></p>
-            </form>
+                <button type="submit">Register</button>
+                <p class="message">Already a potato? <a class="test" href="#" style="color:rgb(116, 28, 28); ">Login</a></p>
+            </form> 
 
-            <form class="login-form">
+            <form class="login-form" action="feed.html">
                 <input type="text" placeholder="Username"/>
                 <input type="password" placeholder="Password"/>
-
-                <button onclick="feed.html">login</button>
-                <p class="message">Not Registered? <b><a href="#" style="color:rgb(7, 238, 255); ">Register NOW!</a></b></p> 
+                
+                <button type="submit">Login</button>
+                <p class="message">Not Registered? <b><a href="#" style="color:rgb(116, 28, 28  ); ">Register NOW!</a></b></p> 
             </form>
-        </div>
+            </div>
         </div>
 
         <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
