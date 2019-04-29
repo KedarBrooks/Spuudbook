@@ -7,10 +7,10 @@
  *  bot responses are pushed through the messages interface via html / css
  *  bot replys with bot a response and a help ink when applicable. 
  * */ 
-var size = 1
-var requests =      ["help"]; 
-var responses =     ["See FAQs for help"];
-var resourceLinks = ["help.site.com"]; 
+var size = 5
+var requests =      ["help", "endgame", "school over", "spudbook", "single"]; 
+var responses =     ["See FAQs for help", "Hey! NO Spoliers!", "stay strong soldier, only 1 more week", "Home of the crispiest potatoes on the internet", "I am in a non open relationship with myself ... sorry."];
+var resourceLinks = ["help.spudbook.com","","","",""]; 
 var msgID = 0; 
 
 /* request manager */ 
@@ -25,7 +25,7 @@ function sendMessage() {
     /* Profile */
     var img = document.createElement('IMG');
     img.className = "profileImg"; 
-    img.src = "assets/default-user.png";
+    img.src = "assets/user.png";
     img.alt = "Avatar"; 
     block.appendChild(img);
     /* Message */
@@ -48,8 +48,8 @@ function replyMessage(msg, resourceLink) {
     block.className="container darker";
     /* Profile */
     var img = document.createElement('IMG');
-    img.className = "profileImg"; 
-    img.src = "/assets/profilePictures/couch.jpg";
+    img.className = "right"; 
+    img.src = "assets/profilePictures/couch.jpg";
     img.alt = "Avatar"; 
     block.appendChild(img);
     /* Message */
@@ -83,19 +83,21 @@ function botReply(userMsg) {
 /* search for needed reply via request */
 function queryRequest(request) {
     // build text and link response
+    var foundResponse  = false; 
     for(i =0; i < size; i++) {
         if(request.includes(requests[i])) {
             var response = [responses[i], resourceLinks[i]];
+            foundResponse = true; 
             return response; 
         }
-        else // default response 
+    }
+    if(!foundResponse) // default response 
         {
             var message = "sorry, I did understand your request";
             var link = ""; 
             var response = [message, link];  
             return response; 
         }
-    }
 }
 ;/* Debuging tool */
 function msgLog(userM, botM, linkM){
