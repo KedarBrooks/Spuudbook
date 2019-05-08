@@ -1,5 +1,5 @@
-# Spuudbook
-Home of the crispiest potatoes on the internet
+# Spuudbook (PVAMU)
+(PVAMU Project) Home of the crispiest potatoes on the internet
 
 ## Developers: 
 - Push all new changes to the **develop** branch. **master** branch will be reservered for working builds of the site.
